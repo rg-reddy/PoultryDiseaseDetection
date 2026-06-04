@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poultry Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}">
+        <span>PoultryDetect</span>
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/predict">Detect Disease</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <h1>🐔 Poultry Disease Detection System</h1>
+
+    <p>
+        AI Powered Poultry Health Analysis
+    </p>
+
+    <div class="hero-list">
+        <p>✓ Coccidiosis</p>
+        <p>✓ Healthy</p>
+        <p>✓ New Castle Disease</p>
+        <p>✓ Salmonella</p>
+    </div>
+
+    <a href="/predict" class="btn">
+        Start Detection
+    </a>
+
+</section>
+
+<section class="features">
+
+    <div class="card">
+        <h3>Fast Detection</h3>
+        <p>Get results instantly.</p>
+    </div>
+
+    <div class="card">
+        <h3>Deep Learning</h3>
+        <p>Powered by VGG16 CNN.</p>
+    </div>
+
+    <div class="card">
+        <h3>4 Categories</h3>
+        <p>Healthy + 3 Diseases.</p>
+    </div>
+
+    <div class="card">
+        <h3>Easy Upload</h3>
+        <p>Upload and Predict.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

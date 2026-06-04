@@ -1,0 +1,22 @@
+# Virtual Environment
+venv/
+
+# Dataset
+dataset/
+
+# Notebooks
+notebooks/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Uploaded Images
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Large Model
+model/*.h5
+
+# VS Code
+.vscode/

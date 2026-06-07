@@ -2,27 +2,29 @@
 
 ## Project Overview
 
-This project uses Transfer Learning with the VGG16 deep learning model to classify poultry diseases from images.
+This project uses Transfer Learning with the VGG16 deep learning model to classify poultry diseases from poultry images.
 
-The application allows users to upload poultry images and predicts one of the following classes:
+The system predicts one of the following classes:
 
 * Healthy
 * Coccidiosis
 * New Castle Disease
 * Salmonella
 
-A Flask web application is integrated with the trained model to provide real-time disease prediction.
+A Flask web application is integrated with the trained model to provide real-time disease prediction through a simple and user-friendly interface.
 
 ---
 
 ## Features
 
-* VGG16 Transfer Learning
+* VGG16 Transfer Learning Model
 * Poultry Disease Classification
-* Image Upload & Preview
-* Real-Time Prediction
+* Image Upload and Preview
+* Real-Time Disease Prediction
 * Flask Web Application
 * Responsive User Interface
+* Sample Test Images
+* Project Documentation and Demo Video
 
 ---
 
@@ -52,7 +54,7 @@ Classes:
 * New Castle Disease
 * Salmonella
 
-For efficient training, a subset of images from each class was used.
+A subset of the dataset was used for training and testing purposes.
 
 ---
 
@@ -61,16 +63,25 @@ For efficient training, a subset of images from each class was used.
 ```text
 PoultryDiseaseProject
 │
+├── document/
+│   └── Poultry_Disease_Detection_Report.pdf
+│
+├── video_demo/
+│   └── Poultry_Disease_Detection_Demo.mp4
+│
+├── project_files/
+│
 ├── app.py
 ├── requirements.txt
 ├── README.md
 │
-├── static
-├── templates
-├── screenshots
-├── sample_images
-│
-└── model
+├── static/
+├── templates/
+├── screenshots/
+├── sample_images/
+├── model/
+├── dataset/
+└── notebooks/
 ```
 
 ---
@@ -124,14 +135,23 @@ http://127.0.0.1:5000
 
 ## Results
 
-The system successfully classifies poultry images into:
+The developed system successfully classifies poultry diseases into:
 
 * Healthy
 * Coccidiosis
 * New Castle Disease
 * Salmonella
 
-using a Transfer Learning based VGG16 model.
+using a VGG16 Transfer Learning model integrated with a Flask web application.
+
+---
+
+## Future Improvements
+
+* Improve model accuracy using larger datasets
+* Deploy the application to cloud platforms
+* Add confidence score visualization
+* Support mobile-friendly deployment
 
 ---
 
@@ -143,7 +163,7 @@ The trained model file is not included in this repository because the file size 
 
 ## Author
 
-BORA RAJA GOPALA REDDY
+**BORA RAJA GOPALA REDDY**
 
 GitHub:
 https://github.com/rg-reddy

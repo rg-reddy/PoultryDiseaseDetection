@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}">
+        <span>PoultryDetect</span>
+    </div>
+</nav>
+
+<div class="result-container">
+
+    <h1>Prediction Result</h1>
+
+    <img src="{{ image_path }}" class="result-image">
+
+    <h2>{{ prediction }}</h2>
+
+    {% if prediction == "Coccidiosis" %}
+    <div class="info-box">
+        <h3>About Disease</h3>
+        <p>Parasitic disease affecting poultry.</p>
+
+        <h3>Symptoms</h3>
+        <ul>
+            <li>Bloody droppings</li>
+            <li>Weakness</li>
+            <li>Weight loss</li>
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if prediction == "Salmonella" %}
+    <div class="info-box">
+        <h3>About Disease</h3>
+        <p>Bacterial infection in poultry.</p>
+
+        <h3>Symptoms</h3>
+        <ul>
+            <li>Diarrhea</li>
+            <li>Weakness</li>
+            <li>Poor growth</li>
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if prediction == "New Castle Disease" %}
+    <div class="info-box">
+        <h3>About Disease</h3>
+        <p>Highly contagious viral disease.</p>
+
+        <h3>Symptoms</h3>
+        <ul>
+            <li>Respiratory distress</li>
+            <li>Neck twisting</li>
+            <li>Paralysis</li>
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if prediction == "Healthy" %}
+    <div class="info-box">
+        <h3>Status</h3>
+        <p>Bird appears healthy.</p>
+    </div>
+    {% endif %}
+
+    <a href="/predict" class="btn">
+        Analyze Another Image
+    </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#1e293b;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+}
+
+.logo span{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#22c55e;
+}
+
+/* ================= HOME PAGE ================= */
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.hero-list{
+    margin-top:30px;
+}
+
+.hero-list p{
+    margin:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#16a34a;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:50px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+/* ================= PREDICTION PAGE ================= */
+
+.predict-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+.predict-card{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+.predict-card h1{
+    color:white;
+    margin-bottom:30px;
+}
+
+.file-upload-wrapper{
+    margin-bottom:20px;
+}
+
+input[type=file]{
+    width:100%;
+    padding:15px;
+    background:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#upload-status{
+    color:#22c55e;
+    font-weight:600;
+    font-size:18px;
+    margin-top:15px;
+}
+
+#file-name{
+    color:#cbd5e1;
+    margin-top:8px;
+    margin-bottom:15px;
+    word-break:break-word;
+}
+
+#preview-container{
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+
+#preview-image{
+    display:none;
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid #22c55e;
+}
+
+.predict-btn{
+    margin-top:20px;
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:14px 35px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.predict-btn:hover{
+    background:#16a34a;
+    transform:translateY(-2px);
+}
+
+/* ================= RESULT PAGE ================= */
+
+.result-container{
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+    text-align:center;
+}
+
+.result-image{
+    width:350px;
+    max-width:100%;
+    margin:20px 0;
+    border-radius:15px;
+    border:3px solid #22c55e;
+}
+
+.info-box{
+    background:#1e293b;
+    padding:25px;
+    margin-top:25px;
+    border-radius:12px;
+    text-align:left;
+}
+
+.info-box h3{
+    margin-bottom:10px;
+}
+
+.info-box ul{
+    list-style:none;
+    margin-top:10px;
+}
+
+.info-box li{
+    margin:8px 0;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    nav{
+        padding:15px 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .predict-card{
+        padding:25px;
+    }
+
+    #preview-image{
+        width:220px;
+        height:220px;
+    }
+
+    .result-image{
+        width:250px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+}

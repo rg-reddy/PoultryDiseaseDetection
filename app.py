@@ -99,9 +99,16 @@ def predict():
             verbose=0
         )
 
-        predicted_class = labels[
-            np.argmax(prediction)
-        ]
+        predicted_index = np.argmax(prediction)
+
+        print("\n==============================")
+        print("Uploaded File:", filename)
+        print("Prediction Scores:", prediction)
+        print("Predicted Index:", predicted_index)
+        print("Predicted Label:", labels[predicted_index])
+        print("==============================\n")
+
+        predicted_class = labels[predicted_index]
 
         image_path = "/" + filepath.replace("\\", "/")
 

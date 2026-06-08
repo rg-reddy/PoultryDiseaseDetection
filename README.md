@@ -59,6 +59,12 @@ Classes:
 
 A subset of the dataset was used for training and testing purposes.
 
+### Note
+
+The original dataset is not included in this repository due to GitHub storage limitations.
+
+Please download the dataset from the Kaggle link above and organize it into train, test, and validation folders before training the model.
+
 ---
 
 ## Project Structure
@@ -71,6 +77,8 @@ PoultryDiseaseProject
 │
 ├── video_demo/
 │   └── Poultry_Disease_Detection_Demo.mp4
+│
+├── project_files/
 │
 ├── app.py
 ├── requirements.txt
@@ -173,6 +181,21 @@ video_demo/
 * Deploy the application to cloud platforms
 * Add confidence score visualization
 * Support mobile-friendly deployment
+* Develop a mobile application version
+* Integrate cloud-based prediction services
+
+---
+
+## Project Links
+
+GitHub Repository:
+https://github.com/rg-reddy/PoultryDiseaseDetection
+
+LinkedIn Profile:
+https://www.linkedin.com/in/raja-gopala-reddy-bora-754b172a1
+
+Dataset:
+https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-diseases
 
 ---
 

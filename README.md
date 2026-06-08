@@ -13,6 +13,8 @@ The system predicts one of the following classes:
 
 A Flask web application is integrated with the trained model to provide real-time disease prediction through a simple and user-friendly interface.
 
+The project was developed as part of the SmartInternz Virtual Internship Program in collaboration with APSCHE.
+
 ---
 
 ## Features
@@ -26,19 +28,39 @@ A Flask web application is integrated with the trained model to provide real-tim
 * Sample Test Images
 * Project Documentation
 * Project Demonstration Video
+* Disease Prediction Results Display
+* User-Friendly Web Interface
 
 ---
 
 ## Technologies Used
 
+### Programming Language
+
 * Python
+
+### Deep Learning Framework
+
 * TensorFlow
 * Keras
+
+### Web Framework
+
 * Flask
+
+### Frontend Technologies
+
 * HTML
 * CSS
+
+### Libraries
+
 * NumPy
 * OpenCV
+* Pillow
+
+### Version Control
+
 * Git
 * GitHub
 
@@ -50,7 +72,7 @@ Dataset Source:
 
 https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-diseases
 
-Classes:
+Dataset Classes:
 
 * Healthy
 * Coccidiosis
@@ -59,11 +81,42 @@ Classes:
 
 A subset of the dataset was used for training and testing purposes.
 
-### Note
+### Dataset Note
 
 The original dataset is not included in this repository due to GitHub storage limitations.
 
-Please download the dataset from the Kaggle link above and organize it into train, test, and validation folders before training the model.
+Please download the dataset from the Kaggle link above and organize it into the appropriate folders before training the model.
+
+Example Structure:
+
+```text
+dataset/
+├── train/
+├── test/
+└── val/
+```
+
+---
+
+## Model Information
+
+The trained model file (`poultry_disease_model.h5`) is not included in this repository because its size exceeds GitHub's file upload limitations.
+
+Model Details:
+
+* Model Architecture: VGG16 Transfer Learning
+* Framework: TensorFlow / Keras
+* File Format: .h5
+* Model Size: Approximately 374 MB
+
+The application was developed, trained, and tested using the trained model stored locally.
+
+To run the application successfully, place the trained model file inside the following directory:
+
+```text
+model/
+└── poultry_disease_model.h5
+```
 
 ---
 
@@ -79,18 +132,29 @@ PoultryDiseaseProject
 │   └── Poultry_Disease_Detection_Demo.mp4
 │
 ├── project_files/
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── templates/
+│   ├── static/
+│   └── sample_images/
+│
+├── model/
+│
+├── dataset/
+│
+├── notebooks/
+│
+├── screenshots/
+│
+├── sample_images/
+│
+├── static/
+│
+├── templates/
 │
 ├── app.py
 ├── requirements.txt
-├── README.md
-│
-├── static/
-├── templates/
-├── screenshots/
-├── sample_images/
-├── model/
-├── dataset/
-└── notebooks/
+└── README.md
 ```
 
 ---
@@ -129,12 +193,38 @@ PoultryDiseaseProject
 
 ## Installation
 
+Clone the repository:
+
+```bash
+git clone https://github.com/rg-reddy/PoultryDiseaseDetection.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd PoultryDiseaseDetection
+```
+
+Install dependencies:
+
 ```bash
 pip install -r requirements.txt
+```
+
+Place the trained model file:
+
+```text
+model/
+└── poultry_disease_model.h5
+```
+
+Run the application:
+
+```bash
 python app.py
 ```
 
-Open:
+Open the application:
 
 ```text
 http://127.0.0.1:5000
@@ -153,6 +243,8 @@ The developed system successfully classifies poultry diseases into:
 
 using a VGG16 Transfer Learning model integrated with a Flask web application.
 
+The application provides real-time disease prediction from uploaded poultry images through an intuitive web interface.
+
 ---
 
 ## Project Report
@@ -170,7 +262,7 @@ document/Poultry_Disease_Report.docx
 Project demonstration video is available in:
 
 ```text
-video_demo/
+video_demo/Poultry_Disease_Detection_Demo.mp4
 ```
 
 ---
@@ -181,21 +273,42 @@ video_demo/
 * Deploy the application to cloud platforms
 * Add confidence score visualization
 * Support mobile-friendly deployment
-* Develop a mobile application version
+* Develop an Android application
 * Integrate cloud-based prediction services
+* Add disease treatment recommendations
+* Support additional poultry diseases
 
 ---
 
 ## Project Links
 
-GitHub Repository:
+### GitHub Repository
+
 https://github.com/rg-reddy/PoultryDiseaseDetection
 
-LinkedIn Profile:
+### LinkedIn Profile
+
 https://www.linkedin.com/in/raja-gopala-reddy-bora-754b172a1
 
-Dataset:
+### Dataset
+
 https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-diseases
+
+---
+
+## Internship Information
+
+**Program:** SmartInternz Virtual Internship Program
+
+**Project Title:** Transfer Learning-Based Classification of Poultry Diseases for Enhanced Health Management
+
+**Department:** Computer Science and Engineering (Artificial Intelligence & Machine Learning)
+
+**College:** Maharaj Vijayaram Gajapathi Raj College of Engineering
+
+**Faculty Mentor:** Satyanarayana Reddy
+
+**Academic Year:** 2026–2027
 
 ---
 

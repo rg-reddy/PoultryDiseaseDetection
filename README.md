@@ -24,7 +24,8 @@ A Flask web application is integrated with the trained model to provide real-tim
 * Flask Web Application
 * Responsive User Interface
 * Sample Test Images
-* Project Documentation and Demo Video
+* Project Documentation
+* Project Demonstration Video
 
 ---
 
@@ -38,6 +39,8 @@ A Flask web application is integrated with the trained model to provide real-tim
 * CSS
 * NumPy
 * OpenCV
+* Git
+* GitHub
 
 ---
 
@@ -45,7 +48,7 @@ A Flask web application is integrated with the trained model to provide real-tim
 
 Dataset Source:
 
-Poultry Pathology Visual Dataset (Kaggle)
+https://www.kaggle.com/datasets/chandrashekarnatesh/poultry-diseases
 
 Classes:
 
@@ -64,12 +67,10 @@ A subset of the dataset was used for training and testing purposes.
 PoultryDiseaseProject
 │
 ├── document/
-│   └── Poultry_Disease_Detection_Report.pdf
+│   └── Poultry_Disease_Report.docx
 │
 ├── video_demo/
 │   └── Poultry_Disease_Detection_Demo.mp4
-│
-├── project_files/
 │
 ├── app.py
 ├── requirements.txt
@@ -90,31 +91,31 @@ PoultryDiseaseProject
 
 ### Home Page
 
-![Home Page](screenshots/home_page.png)
+![Home Page](screenshots/01_home_page.png)
 
 ### Prediction Page
 
-![Prediction Page](screenshots/predict_page.png)
+![Prediction Page](screenshots/02_prediction_page.png)
 
-### Image Selected
+### Image Upload
 
-![Image Selected](screenshots/image_selected.png)
+![Image Upload](screenshots/03_image_uploaded.png)
 
 ### Healthy Prediction
 
-![Healthy Prediction](screenshots/healthy_prediction.png)
+![Healthy Prediction](screenshots/04_healthy_prediction.png)
 
 ### Coccidiosis Prediction
 
-![Coccidiosis Prediction](screenshots/coccidiosis_prediction.png)
+![Coccidiosis Prediction](screenshots/05_coccidiosis_prediction.png)
 
 ### Salmonella Prediction
 
-![Salmonella Prediction](screenshots/salmonella_prediction.png)
+![Salmonella Prediction](screenshots/06_salmonella_prediction.png)
 
 ### New Castle Disease Prediction
 
-![New Castle Disease Prediction](screenshots/newcastle_prediction.png)
+![New Castle Disease Prediction](screenshots/07_newcastle_disease_prediction.png)
 
 ---
 
@@ -146,6 +147,26 @@ using a VGG16 Transfer Learning model integrated with a Flask web application.
 
 ---
 
+## Project Report
+
+Project documentation is available in:
+
+```text
+document/Poultry_Disease_Report.docx
+```
+
+---
+
+## Demonstration Video
+
+Project demonstration video is available in:
+
+```text
+video_demo/
+```
+
+---
+
 ## Future Improvements
 
 * Improve model accuracy using larger datasets
@@ -155,15 +176,12 @@ using a VGG16 Transfer Learning model integrated with a Flask web application.
 
 ---
 
-## Note
-
-The trained model file is not included in this repository because the file size exceeds GitHub's standard upload limits.
-
----
-
 ## Author
 
 **BORA RAJA GOPALA REDDY**
 
 GitHub:
 https://github.com/rg-reddy
+
+LinkedIn:
+https://www.linkedin.com/in/raja-gopala-reddy-bora-754b172a1
